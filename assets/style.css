@@ -1,4 +1,4 @@
-/* Sofia Larraggione — Portfolio editorial · v3.11
+/* Sofia Larraggione — Portfolio editorial · v3.12
    Rosa chicle + revista de arte. Script caligráfica gigante sobre foto, sans fina en mayúsculas. */
 :root{
   --pink:#F4A3B8;
@@ -321,7 +321,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .grain{display:none}
 }
 
-/* ================= CUADERNO DE ESPIRAL (editoriales) · v3.11 ================= */
+/* ================= CUADERNO DE ESPIRAL (editoriales) · v3.12 ================= */
 .nbs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,3vw,48px) clamp(16px,2vw,32px)}
 .nb:nth-child(3n+2){margin-top:70px}
 .book{position:relative;aspect-ratio:3/4;perspective:1400px;cursor:pointer;filter:drop-shadow(0 22px 26px rgba(90,30,50,.28))}
@@ -348,7 +348,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 @media (max-width:900px){.nbs{grid-template-columns:repeat(2,1fr)}.nb:nth-child(n){margin-top:0}}
 @media (max-width:640px){.nbs{grid-template-columns:repeat(2,1fr)}.nb-meta .script{font-size:46px}}
 
-/* ================= Media kit · v3.11 ================= */
+/* ================= Media kit · v3.12 ================= */
 .stat small{display:block;margin-top:6px;font:italic 400 15px/1.3 var(--serif);color:var(--ink-soft)}
 .serie{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,4vw,70px);align-items:end;margin-top:clamp(60px,7vw,100px);padding:clamp(30px,4vw,56px);background:var(--blush);position:relative;overflow:hidden}
 .serie-t .script{display:block;font-size:clamp(54px,6vw,104px);color:var(--pink-deep);margin-top:14px}
@@ -361,7 +361,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .reel-t{margin:6px 0 0;font:italic 400 15px/1.35 var(--serif);color:var(--ink-soft)}
 @media (max-width:860px){.serie{grid-template-columns:1fr}}
 
-/* ================= v3.11 · fotos nuevas ================= */
+/* ================= v3.12 · fotos nuevas ================= */
 .wide{aspect-ratio:3/2}
 .life{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(150px,17vw,260px);gap:clamp(8px,1vw,14px)}
 .lf{margin:0;position:relative;overflow:hidden;background:var(--blush)}
@@ -394,11 +394,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .expr{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:520px){.nbs{grid-template-columns:1fr}}
-/* v3.11 · arreglo de desborde en móvil */
+/* v3.12 · arreglo de desborde en móvil */
 html,body{overflow-x:clip}
 .grain{inset:0;background-size:180px}
 @media (max-width:860px){.aud{grid-template-columns:1fr}.row{grid-template-columns:96px minmax(0,1fr) 46px}}
-/* v3.11 · correcciones */
+/* v3.12 · correcciones */
 .m-photo img{object-position:50% 22%}
 .cover-photo{background:#efecea}
 .pol-grid{grid-template-columns:repeat(4,1fr);max-width:1100px;margin:0 auto}
@@ -412,7 +412,7 @@ html,body{overflow-x:clip}
 @media (max-width:860px){.pol-grid{grid-template-columns:repeat(2,1fr)}.expr{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:520px){.nbs .nb{width:100%}.expr{grid-template-columns:1fr 1fr}}
 
-/* v3.11 */
+/* v3.12 */
 .card[data-view="modelaje"] img{object-position:50% 10%}
 .test{padding-bottom:clamp(60px,8vw,110px)}
 .beauty{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1vw,14px)}
@@ -423,7 +423,7 @@ html,body{overflow-x:clip}
 .lf7 img,.lf8 img,.lf9 img,.lf10 img{object-position:50% 35%}
 @media (max-width:860px){.beauty{grid-template-columns:repeat(2,1fr)}.lf7,.lf8,.lf9,.lf10{grid-column:auto}}
 
-/* v3.11 · videos */
+/* v3.12 · videos */
 .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,24px)}
 .vid{margin:0}
 .vid-ph{position:relative;display:block;width:100%;aspect-ratio:9/16;overflow:hidden;border-radius:18px;background:var(--blush)}
@@ -446,7 +446,7 @@ html,body{overflow-x:clip}
 .vid-n{text-align:left;line-height:1.5}
 @media (max-width:860px){.cover-side .v{display:none}}
 .cc-page video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
-/* v3.11 · portada igual a la captura aprobada (opción B) en cualquier pantalla:
+/* v3.12 · portada igual a la captura aprobada (opción B) en cualquier pantalla:
    la columna de la foto mantiene la proporción de 1440×900, así no se acerca en pantallas anchas */
 .cover{grid-template-columns:min(62vw,100svh) minmax(0,1fr)}
 .cover-script-v{right:calc(100% - min(62vw,100svh) + 2%)}
@@ -454,9 +454,14 @@ html,body{overflow-x:clip}
   .cover{grid-template-columns:1fr}
   .cover-script-v{right:4%}
 }
-/* v3.11 · foto de la máscara destacada en Beauty (modelaje) */
+/* v3.12 · foto de la máscara destacada en Beauty (modelaje) */
 .beauty .big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
 .beauty .big img{object-position:50% 40%}
 .cover-photo img{inset:0;width:100%;height:100%;object-position:47% 0%}
 .cover-meta{color:var(--ink)}
 .cover-photo picture{position:absolute;inset:0}
+/* v3.12 · los books se animan siempre, también con "reducir movimiento" activado */
+@media (prefers-reduced-motion:reduce){
+  .half.t .leaf.go{animation:flipT .62s cubic-bezier(.55,0,.35,1) forwards!important}
+  .half.b .leaf.go{animation:flipB .62s cubic-bezier(.55,0,.35,1) forwards!important}
+}

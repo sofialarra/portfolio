@@ -1,4 +1,4 @@
-/* Sofia Larraggione — Portfolio editorial · v3.11 */
+/* Sofia Larraggione — Portfolio editorial · v3.12 */
 (() => {
   const d = document, b = d.body, $ = (s, c = d) => c.querySelector(s), $$ = (s, c = d) => [...c.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -161,7 +161,7 @@
       paint(h.pg, 0); paint(h.leaf, 0);
       return h;
     });
-    const DUR = reduce ? 0 : 620, GAP = reduce ? 0 : 140;
+    const DUR = 620, GAP = 140;
     const turn = (h, from, to, delay) => setTimeout(() => {
       paint(h.pg, to); paint(h.leaf, from);
       h.leaf.classList.remove('go'); void h.leaf.offsetWidth; h.leaf.classList.add('go');
@@ -173,17 +173,18 @@
       turn(halves[0], i, next, 0); turn(halves[1], i, next, GAP);
       setTimeout(() => { i = next; busy = false; }, DUR + GAP + 20);
     };
+    /* con el cursor encima: pasa de página solo, sin hacer clic */
+    let hov = null, auto = null;
+    const startHover = () => { if (hov) return; clearInterval(auto); flip(); hov = setInterval(flip, 900); };
+    const stopHover = () => { clearInterval(hov); hov = null; };
+    bk.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') startHover(); });
+    bk.addEventListener('pointermove', e => { if (e.pointerType !== 'touch') startHover(); });
+    bk.addEventListener('pointerleave', stopHover);
+    /* en el celular (sin cursor): se toca para pasar, y además pasa solo cuando está a la vista */
     bk.addEventListener('click', flip);
     bk.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
-    if (!reduce) {
-      let timer;
-      const vis = new IntersectionObserver(es => es.forEach(en => { clearInterval(timer); if (en.isIntersecting) timer = setInterval(flip, 3200 + bi * 230); }));
-      vis.observe(bk);
-      /* con el mouse encima: pasa de página seguido */
-      let hov;
-      bk.addEventListener('mouseenter', () => { clearInterval(hov); flip(); hov = setInterval(flip, 950); });
-      bk.addEventListener('mouseleave', () => clearInterval(hov));
-    }
+    const vis = new IntersectionObserver(es => es.forEach(en => { clearInterval(auto); if (en.isIntersecting && !hov) auto = setInterval(flip, 3200 + bi * 230); }));
+    vis.observe(bk);
   });
 
   if (reduce) $$('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
