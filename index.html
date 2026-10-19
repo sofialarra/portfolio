@@ -1,0 +1,330 @@
+<!doctype html>
+<!-- Sofia Larraggione · Portfolio editorial · v3.11 -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sofia Larraggione</title>
+<meta name="description" content="Sofia Larraggione — modelo, creadora de contenido y actriz. Madrid, España.">
+<meta name="version" content="v3.11">
+<meta name="theme-color" content="#F4A3B8">
+<meta property="og:title" content="Sofia Larraggione">
+<meta property="og:description" content="Modelo · Creadora de contenido · Actriz">
+<meta property="og:image" content="img2/cover.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23F4A3B8'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23161414'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=2.0">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ BARRA SUPERIOR ============ -->
+<header class="top" id="top">
+  <a class="name" href="#portada"><i>Sofia</i><span>Larraggione</span></a>
+  <nav class="views" id="views" aria-label="Qué ver" hidden>
+    <button type="button" data-view="modelaje" data-i18n="v.model">Modelaje</button>
+    <button type="button" data-view="contenido" data-i18n="v.content">Contenido</button>
+    <button type="button" data-view="actuacion" data-i18n="v.act">Actuación</button>
+    <button type="button" data-view="todo" data-i18n="v.all">Todo</button>
+  </nav>
+  <div class="tools">
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn-c" href="#contacto" data-i18n="nav.contact">Contacto</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ PORTADA ============ -->
+<section class="cover" id="portada" aria-label="Portada">
+  <div class="cover-photo"><picture><source media="(max-width:860px)" srcset="img2/cover-m.webp"><img src="img2/cover.webp" alt="Sofia Larraggione, retrato beauty" fetchpriority="high"></picture></div>
+  <div class="cover-side">
+    <span class="v" style="right:30%;top:9%" data-par="10">Larraggione</span>
+    <span class="v" style="right:10%;top:16%" data-par="18">Larraggione</span>
+    <span class="v" style="right:56%;top:30%" data-par="8">Larraggione</span>
+    <span class="v" style="right:50%;top:33%" data-par="12">Larraggione</span>
+    <span class="v" style="right:44%;top:31%" data-par="6">Larraggione</span>
+    <span class="v" style="right:70%;top:52%" data-par="14">Larraggione</span>
+  </div>
+  <div class="cover-script-v" aria-hidden="true">Sofia<small>Portfolio 2026</small></div>
+  <div class="cover-meta caps">
+    <p>Nº 01 — Portfolio 2026</p>
+    <p>Madrid · España</p>
+  </div>
+  <div class="cover-roles caps">
+    <b data-i18n="cover.hi">Modelo, creadora & actriz</b>
+    <span data-i18n="cover.roles">Modelaje · Contenido · Actuación</span>
+  </div>
+  <h1 class="cover-big glass" data-par="22">Sofia</h1>
+</section>
+
+<!-- ============ ¿QUÉ QUERÉS VER? ============ -->
+<section class="pick" id="elegir" aria-labelledby="pickTitle">
+  <div class="wrap">
+    <div class="pick-head">
+      <h2 class="draw" id="pickTitle" data-i18n="pick.title">¿Qué te gustaría ver?</h2>
+      <p class="caps" data-i18n="pick.sub">Este portfolio reúne todo lo que hago. Elige lo que te interesa y te muestro solo eso.</p>
+    </div>
+    <div class="cards">
+      <button type="button" class="card" data-view="modelaje">
+        <img src="img2/sel-modelo.webp" alt="" loading="lazy">
+        <span class="num caps">01</span>
+        <span class="script" data-i18n="c.model">Modelo</span>
+        <span class="caps"><span data-i18n="c.model.l">Medidas · Polas · Editoriales</span><span>→</span></span>
+      </button>
+      <button type="button" class="card" data-view="contenido">
+        <img src="img2/sel-contenido.webp" alt="" loading="lazy">
+        <span class="num caps">02</span>
+        <span class="script" data-i18n="c.content">Contenido</span>
+        <span class="caps"><span data-i18n="c.content.l">Media kit · Audiencia · Beauty</span><span>→</span></span>
+      </button>
+      <button type="button" class="card" data-view="actuacion">
+        <img src="img2/sel-actriz.webp" alt="" loading="lazy">
+        <span class="num caps">03</span>
+        <span class="script" data-i18n="c.act">Actriz</span>
+        <span class="caps"><span data-i18n="c.act.l">Currículum · Formación · Experiencia</span><span>→</span></span>
+      </button>
+    </div>
+    <div class="all"><button type="button" class="pill" data-view="todo"><span data-i18n="pick.all">Ver portfolio completo</span><span class="arr"></span></button></div>
+  </div>
+</section>
+
+<!-- ============ 01 · MODELAJE ============ -->
+<section class="sec m" id="modelaje" data-sec="modelaje">
+  <div class="m-open">
+    <div class="m-photo">
+      <img src="img2/m-open.webp" alt="Sofia Larraggione, cuerpo entero en estudio" data-lb="m-open">
+      <p class="caps"><i data-i18n="m.kick">Sección uno</i><span data-i18n="m.kick2">Modelaje — moda, editorial y campañas</span></p>
+      <span class="script draw" aria-hidden="true" data-i18n="m.title">Modelo</span>
+    </div>
+    <div class="m-specs">
+      <h2 class="draw" data-i18n="m.h">Medidas</h2>
+      <p class="sub" data-i18n="m.sub">Presencia natural frente a cámara para moda, editorial, e-commerce y campañas. Base en Madrid, con movilidad a todo el mundo.</p>
+      <dl class="specs rv">
+        <div><dt class="caps" data-i18n="m.h1">Altura</dt><dd>1,66<small>m</small></dd></div>
+        <div><dt class="caps" data-i18n="m.h2">Busto</dt><dd>90</dd></div>
+        <div><dt class="caps" data-i18n="m.h3">Cintura</dt><dd>70</dd></div>
+        <div><dt class="caps" data-i18n="m.h4">Cadera</dt><dd>100</dd></div>
+        <div><dt class="caps" data-i18n="m.h5">Zapatos</dt><dd>38</dd></div>
+      </dl>
+      <div class="m-note caps"><span>Nº 01 — 2026</span><span data-i18n="m.note">Polas sin retoque</span></div>
+    </div>
+  </div>
+
+  <div class="pol">
+    <div class="wrap">
+      <div class="hd caps"><span data-i18n="pol.h">Polas</span><span data-i18n="pol.r">Natural · sin maquillaje · sin retoque</span></div>
+      <div class="pol-grid"><figure data-lb="pol"><img src="img2/pola-1.webp" alt="Pola 1" loading="lazy"><figcaption>01</figcaption></figure><figure data-lb="pol"><img src="img2/pola-2.webp" alt="Pola 2" loading="lazy"><figcaption>02</figcaption></figure><figure data-lb="pol"><img src="img2/pola-3.webp" alt="Pola 3" loading="lazy"><figcaption>03</figcaption></figure><figure data-lb="pol"><img src="img2/pola-4.webp" alt="Pola 4" loading="lazy"><figcaption>04</figcaption></figure></div>
+      <p class="pol-cap"><span class="script draw" data-i18n="pol.s">tal cual soy</span><span class="caps" data-i18n="pol.c">Altura 1,66 m · Busto 90 · Cintura 70 · Cadera 100 · Zapatos 38</span></p>
+    </div>
+  </div>
+
+  <div class="test">
+    <div class="wrap">
+      <div class="hd caps"><span>Test</span><span data-i18n="test.r">Pose, expresión y movimiento</span></div>
+      <div class="test-grid"><figure data-lb="test"><img src="img2/test-1.webp" alt="Test 1" loading="lazy"></figure><figure data-lb="test"><img src="img2/test-2.webp" alt="Test 2" loading="lazy"></figure><figure data-lb="test"><img src="img2/test-3.webp" alt="Test 3" loading="lazy"></figure><figure data-lb="test"><img src="img2/test-4.webp" alt="Test 4" loading="lazy"></figure><figure data-lb="test"><img src="img2/test-5.webp" alt="Test 5" loading="lazy"></figure><figure data-lb="test"><img src="img2/test-6.webp" alt="Test 6" loading="lazy"></figure><span class="test-line" aria-hidden="true"></span><span class="test-over glass draw" aria-hidden="true" data-par="16">Test</span></div>
+      <div class="hd caps" style="margin-top:clamp(70px,8vw,110px)"><span>Beauty</span><span data-i18n="be.r">Close-up · piel real, gloss</span></div>
+      <div class="beauty"><figure class="rv big" data-lb="beauty-m"><img src="img2/m-mascara.webp" alt="Sofia Larraggione aplicándose máscara de pestañas" loading="lazy"></figure><figure class="rv" data-lb="beauty-m"><img src="img2/beauty-1.webp" alt="Beauty close-up 1" loading="lazy"></figure><figure class="rv" data-lb="beauty-m"><img src="img2/beauty-2.webp" alt="Beauty close-up 2" loading="lazy"></figure><figure class="rv" data-lb="beauty-m"><img src="img2/beauty-3.webp" alt="Beauty close-up 3" loading="lazy"></figure><figure class="rv" data-lb="beauty-m"><img src="img2/beauty-4.webp" alt="Beauty close-up 4" loading="lazy"></figure></div>
+    </div>
+  </div>
+
+  <div class="eds">
+    <div class="wrap">
+      <div class="hd caps"><span data-i18n="ed.l">Proyectos editoriales</span><span data-i18n="ed.hint">Pasa el mouse o toca el book para pasar la página</span></div>
+      <div class="nbs">
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/cherry-1.webp,img2/cherry-2.webp,img2/cherry-3.webp" role="button" tabindex="0" aria-label="Cherry: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Cherry</span><span class="caps" data-i18n="ed.1">Rosa &amp; cerezas · perlas, backstage</span><span class="caps nb-n">01 / 06</span></div>
+        </article>
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/denim-1.webp,img2/denim-2.webp,img2/denim-3.webp" role="button" tabindex="0" aria-label="Denim: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Denim</span><span class="caps" data-i18n="ed.2">Estudio · denim, fondo blanco</span><span class="caps nb-n">02 / 06</span></div>
+        </article>
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/riviera-1.webp,img2/riviera-2.webp,img2/riviera-3.webp,img2/riviera-4.webp" role="button" tabindex="0" aria-label="Riviera: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Riviera</span><span class="caps" data-i18n="ed.3">Mallorca · sol, piedra, mar</span><span class="caps nb-n">03 / 06</span></div>
+        </article>
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/tropic-1.webp,img2/tropic-2.webp,img2/tropic-3.webp,img2/tropic-4.webp" role="button" tabindex="0" aria-label="Tropic: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Tropic</span><span class="caps" data-i18n="ed.4">Swimwear · jardín, luz cálida</span><span class="caps nb-n">04 / 06</span></div>
+        </article>
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/silver-1.webp,img2/silver-2.webp,img2/silver-3.webp" role="button" tabindex="0" aria-label="Silver: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Silver</span><span class="caps" data-i18n="ed.5">Beauty · brillo, delineado gráfico</span><span class="caps nb-n">05 / 06</span></div>
+        </article>
+        <article class="nb rv">
+          <div class="book" data-imgs="img2/print-1.webp,img2/print-2.webp,img2/print-3.webp,img2/print-4.webp" role="button" tabindex="0" aria-label="Print: pasar página">
+            <div class="half t"></div><div class="half b"></div><div class="rings" aria-hidden="true"></div>
+          </div>
+          <div class="nb-meta"><span class="script">Print</span><span class="caps" data-i18n="ed.6">Color · estampado, flash</span><span class="caps nb-n">06 / 06</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · CREACIÓN DE CONTENIDO ============ -->
+<section class="sec cc" id="contenido" data-sec="contenido">
+  <div class="wrap">
+    <div class="cc-open">
+      <div class="cc-page rv" data-tilt>
+        <video class="cc-vid" poster="img2/cc-poster.webp" autoplay muted loop playsinline preload="auto" aria-label="Sofia Larraggione probándose lentes, video"><source src="video/contenido.webm" type="video/webm"><source src="video/contenido.mp4" type="video/mp4"></video>
+        <span class="over">THE BEST</span>
+        <span class="script draw" aria-hidden="true">Content</span>
+        <div class="cc-pills"><span>@sofi.larra</span><span data-i18n="cc.pill">Moda · Lujo →</span></div>
+        <div class="foot caps"><span data-i18n="cc.f1">Estilo con historia</span><span>Media kit 2026</span></div>
+      </div>
+      <div class="cc-intro">
+        <p class="caps" style="margin:0 0 18px;color:var(--ink-soft)" data-i18n="cc.kick">Sección dos — Creación de contenido</p>
+        <h2 data-i18n="cc.h">Moda, estilo &amp; cultura de <em>lujo</em></h2>
+        <p class="lede" data-i18n="cc.lede">Actriz, modelo y creadora de contenido argentina, radicada en Madrid. Comparto moda desde una mirada de opinión y recomendación: styling propio, análisis de estilos y datos históricos sobre la moda de lujo.</p>
+        <a class="pill handle" href="https://www.instagram.com/sofi.larra/" target="_blank" rel="noopener">Instagram @sofi.larra <span class="arr"></span></a>
+      </div>
+    </div>
+
+    <div class="hd caps"><span data-i18n="cc.ig">Instagram — 21 jul a 18 oct 2026 (90 días)</span><span>Media kit</span></div>
+    <div class="stats rv">
+      <div class="stat"><b data-to="3636">3.636</b><span class="caps" data-i18n="st.1">Seguidores</span><small data-i18n="st.1s">+34,5% en 90 días</small></div>
+      <div class="stat"><b data-to="283.4" data-dec="1" data-suf="K">283,4K</b><span class="caps" data-i18n="st.2">Visualizaciones</span><small data-i18n="st.2s">98,7K en los últimos 30 días</small></div>
+      <div class="stat"><b data-to="154" data-suf="K">154K</b><span class="caps" data-i18n="st.3">Cuentas alcanzadas</span><small data-i18n="st.3s">Espectadores únicos</small></div>
+      <div class="stat"><b data-to="45.1" data-dec="1" data-suf="K">45,1K</b><span class="caps" data-i18n="st.4">Interacciones</span><small data-i18n="st.4s">Me gusta, comentarios, envíos</small></div>
+      <div class="stat"><b data-to="79" data-suf="%">79%</b><span class="caps" data-i18n="st.5">Vistas de no seguidores</span><small data-i18n="st.5s">Llega más allá de su comunidad</small></div>
+      <div class="stat"><b data-to="1222" data-pre="+">+1.222</b><span class="caps" data-i18n="st.6">Seguidores nuevos</span><small data-i18n="st.6s">4,1K visitas al perfil</small></div>
+    </div>
+
+    <div class="serie rv">
+      <div class="serie-t"><span class="caps" data-i18n="se.k">Serie destacada</span><span class="script">Antes de opinar de moda</span></div>
+      <div class="serie-d">
+        <p data-i18n="se.p">Su formato más fuerte: historia, datos y contexto de la moda antes de opinar. Desde septiembre es el motor del crecimiento de la cuenta.</p>
+        <dl><div><dt class="caps" data-i18n="se.1">Reproducciones</dt><dd>36K</dd></div><div><dt class="caps" data-i18n="se.2">Me gusta</dt><dd>4,3K</dd></div><div><dt class="caps" data-i18n="se.3">Envíos</dt><dd>677</dd></div></dl>
+      </div>
+    </div>
+
+    <div class="aud">
+      <div class="rv"><h3 data-i18n="au.g">Género</h3>
+        <div class="split-bar"><div class="f" style="flex:53">53% <span data-i18n="au.f" style="margin-left:6px">mujeres</span></div><div class="h" style="flex:47"><span data-i18n="au.m" style="margin-right:6px">hombres</span> 47%</div></div>
+        <h3 data-i18n="au.fm" style="margin-top:44px">Formatos</h3>
+        <div class="rows">
+          <div class="row"><span>Reels</span><span class="t"><i style="--w:100%"></i></span><b>236K</b></div>
+          <div class="row"><span data-i18n="au.st">Historias</span><span class="t"><i style="--w:14%"></i></span><b>34K</b></div>
+          <div class="row"><span data-i18n="au.po">Posts</span><span class="t"><i style="--w:6%"></i></span><b>13K</b></div>
+        </div>
+      </div>
+      <div class="rv"><h3 data-i18n="au.a">Edad</h3>
+        <div class="rows"><div class="row"><span>18–24</span><span class="t"><i style="--w:49%"></i></span><b>21,8%</b></div><div class="row"><span>25–34</span><span class="t"><i style="--w:100%"></i></span><b>44,9%</b></div><div class="row"><span>35–44</span><span class="t"><i style="--w:34%"></i></span><b>15,4%</b></div><div class="row"><span>45–54</span><span class="t"><i style="--w:17%"></i></span><b>7,8%</b></div></div>
+      </div>
+      <div class="rv"><h3 data-i18n="au.c">Países</h3>
+        <div class="rows"><div class="row"><span>Argentina</span><span class="t"><i style="--w:100%"></i></span><b>47,7%</b></div><div class="row"><span data-i18n="au.mx">México</span><span class="t"><i style="--w:19%"></i></span><b>9,3%</b></div><div class="row"><span>Cuba</span><span class="t"><i style="--w:17%"></i></span><b>8,2%</b></div><div class="row"><span data-i18n="au.es">España</span><span class="t"><i style="--w:16%"></i></span><b>7,8%</b></div><div class="row"><span data-i18n="au.us">EE.UU.</span><span class="t"><i style="--w:9%"></i></span><b>4,5%</b></div></div>
+      </div>
+    </div>
+
+    <div class="pillars rv">
+      <div><h4 data-i18n="pi.1">Antes de opinar de moda</h4><p data-i18n="pi.1t">Serie sobre historia, datos y curiosidades de la moda y sus grandes marcas.</p></div>
+      <div><h4 data-i18n="pi.2">Opinión &amp; debate</h4><p data-i18n="pi.2t">¿La moda impone o sigue? Reflexiones sobre la industria con voz propia.</p></div>
+      <div><h4 data-i18n="pi.3">Cine, libros &amp; cultura</h4><p data-i18n="pi.3t">Reseñas y recomendaciones, de Lorca al cine. Con presencia actoral frente a cámara.</p></div>
+    </div>
+
+    <div class="hd caps" style="margin-top:clamp(70px,8vw,110px)"><span data-i18n="lf.h">Beauty &amp; lifestyle</span><span>@sofi.larra</span></div>
+    <div class="life"><figure class="lf lf1" data-lb="life"><img src="img2/life-1.webp" alt="Backstage · Dior" loading="lazy"><figcaption class="caps">Backstage · Dior</figcaption></figure><figure class="lf lf2" data-lb="life"><img src="img2/life-2.webp" alt="Mallorca" loading="lazy"><figcaption class="caps">Mallorca</figcaption></figure><figure class="lf lf3" data-lb="life"><img src="img2/life-3.webp" alt="Mallorca" loading="lazy"><figcaption class="caps">Mallorca</figcaption></figure><figure class="lf lf4" data-lb="life"><img src="img2/life-4.webp" alt="Night out" loading="lazy"><figcaption class="caps">Night out</figcaption></figure><figure class="lf lf5" data-lb="life"><img src="img2/life-5.webp" alt="Lip check" loading="lazy"><figcaption class="caps">Lip check</figcaption></figure><figure class="lf lf6" data-lb="life"><img src="img2/life-6.webp" alt="90s mood" loading="lazy"><figcaption class="caps">90s mood</figcaption></figure><figure class="lf lf7" data-lb="life"><img src="img2/beauty-1.webp" alt="Beauty 1" loading="lazy"><figcaption class="caps">Beauty</figcaption></figure><figure class="lf lf8" data-lb="life"><img src="img2/beauty-2.webp" alt="Beauty 2" loading="lazy"><figcaption class="caps">Beauty</figcaption></figure><figure class="lf lf9" data-lb="life"><img src="img2/beauty-3.webp" alt="Beauty 3" loading="lazy"><figcaption class="caps">Beauty</figcaption></figure><figure class="lf lf10" data-lb="life"><img src="img2/beauty-4.webp" alt="Beauty 4" loading="lazy"><figcaption class="caps">Beauty</figcaption></figure></div>
+
+    <div class="hd caps" style="margin-top:clamp(70px,8vw,110px)"><span data-i18n="vd.h">Últimos videos</span><span data-i18n="vd.r">Toca para reproducir</span></div>
+    <div class="vids"><figure class="vid rv"><button type="button" class="vid-ph" data-ig="Dc82k1hsS-4" aria-label="Reproducir: Antes de opinar de moda"><img src="img2/vid-1.webp" alt="" loading="lazy"><span class="vid-play" aria-hidden="true"></span><span class="vid-n caps">01 · Antes de opinar de moda</span></button><figcaption><a class="caps" href="https://www.instagram.com/p/Dc82k1hsS-4/" target="_blank" rel="noopener"><span data-i18n="vd.open">Ver en Instagram</span> ↗</a></figcaption></figure><figure class="vid rv"><button type="button" class="vid-ph" data-ig="DepKJGtsaRL" aria-label="Reproducir: Tenés que saber esto"><img src="img2/vid-2.webp" alt="" loading="lazy"><span class="vid-play" aria-hidden="true"></span><span class="vid-n caps">02 · Tenés que saber esto</span></button><figcaption><a class="caps" href="https://www.instagram.com/p/DepKJGtsaRL/" target="_blank" rel="noopener"><span data-i18n="vd.open">Ver en Instagram</span> ↗</a></figcaption></figure><figure class="vid rv"><button type="button" class="vid-ph" data-ig="Demn7vusisY" aria-label="Reproducir: La moda se volvió cobarde"><img src="img2/vid-3.webp" alt="" loading="lazy"><span class="vid-play" aria-hidden="true"></span><span class="vid-n caps">03 · La moda se volvió cobarde</span></button><figcaption><a class="caps" href="https://www.instagram.com/p/Demn7vusisY/" target="_blank" rel="noopener"><span data-i18n="vd.open">Ver en Instagram</span> ↗</a></figcaption></figure></div>
+
+    <div class="hd caps" style="margin-top:clamp(70px,8vw,110px)"><span data-i18n="r.h">Reels más vistos</span><span data-i18n="r.h2">Último año · reproducciones</span></div>
+    <ol class="rlist"><li class="rv"><b>470K</b><span>“Alexa, I’ll tell you girl”</span><em class="caps" data-i18n="r.l1">73K me gusta</em></li><li class="rv"><b>72K</b><span>“Sigan hablando”</span><em class="caps" data-i18n="r.l2">1,2K comentarios</em></li><li class="rv"><b>39K</b><span>“Sigo igual pero con flequillo”</span><em class="caps" data-i18n="r.l5">Humor</em></li><li class="rv"><b>36K</b><span>“Antes de opinar de moda”</span><em class="caps" data-i18n="r.l3">4,3K me gusta</em></li><li class="rv"><b>19K</b><span>“Did you know Sofia?”</span><em class="caps" data-i18n="r.l4">1,6K me gusta</em></li></ol>
+    <p style="margin:34px 0 clamp(90px,10vw,150px)"><a class="pill" href="https://www.instagram.com/sofi.larra/reels/" target="_blank" rel="noopener"><span data-i18n="r.cta">Ver reels en Instagram</span> <span class="arr"></span></a></p>
+  </div>
+</section>
+
+<!-- ============ 03 · ACTUACIÓN ============ -->
+<section class="sec ac" id="actuacion" data-sec="actuacion">
+  <div class="wrap">
+    <div class="hd caps"><span data-i18n="ac.kick">Sección tres — Currículum actoral</span><span>CV</span></div>
+
+    <div class="spread rv">
+      <div class="pg ph"><img src="img2/ac-portrait.webp" alt="Sofia Larraggione, retrato actoral" data-lb="ac"></div>
+      <div class="pg">
+        <h2 data-i18n="ac.h">Actriz —<span>desde los 4 años sobre un escenario.</span></h2>
+        <div class="lbl-row">
+          <p data-i18n="ac.l1">Taller Locomun<br>Dir. Carlos Torreiro</p>
+          <p data-i18n="ac.l2">Mar del Plata, Argentina<br>Hoy: Madrid, España</p>
+        </div>
+        <div class="bio"><p data-i18n="ac.bio">Soy actriz nacida en Mar del Plata, Argentina, con una trayectoria que comenzó a los 4 años en el teatro, inspirada por mi abuelo paterno, director teatral en mi ciudad. Me formé y perfeccioné hasta los 20 años, participando en una amplia variedad de obras que abarcan desde dramas y comedias hasta sainetes y piezas de Federico García Lorca. Posteriormente, amplié mi experiencia en el ámbito audiovisual, trabajando en proyectos de publicidad y cine con compañías como Netflix, Volkswagen y Schneider. Actualmente resido en Madrid, España, con total disponibilidad y movilidad para trasladarme a cualquier parte del mundo, desde donde busco un nuevo despertar artístico.</p></div>
+        <div class="pg-foot"><span data-i18n="ac.f">Biografía</span><span>Sofia Larraggione · 03</span></div>
+      </div>
+    </div>
+
+    <div class="wide rv">
+      <img src="img2/ac-wide.webp" alt="Sofia Larraggione, retrato" data-lb="ac">
+      <span class="line" aria-hidden="true"></span>
+      <div class="cr" style="left:6%;top:7%"><b>Pepita la Pistolera</b><span data-i18n="ex.1">Largometraje de Netflix — participación en el elenco.</span></div>
+      <div class="cr" style="left:38%;top:7%"><b data-i18n="ex.2h">Bodas de sangre</b><span data-i18n="ex.2">De Federico García Lorca. Papel de la novia en el Teatro Municipal de Mar del Plata.</span></div>
+      <div class="cr" style="right:6%;top:7%"><b data-i18n="ex.3h">Serie internacional</b><span data-i18n="ex.3">Producción audiovisual para Netflix, como personaje secundario.</span></div>
+      <span class="tag" style="left:24%;top:42%" data-i18n="ex.t1">Experiencia</span>
+      <span class="tag" style="left:62%;top:44%" data-i18n="ex.t1b">Experiencia</span>
+      <div class="cr" style="left:8%;bottom:8%"><b data-i18n="ex.4h">Sainetes y obras contemporáneas</b><span data-i18n="ex.4">Creación colectiva en el Taller Locomun. Rol de Italiana y Española.</span></div>
+      <div class="cr" style="right:8%;bottom:8%"><b>Volkswagen · Schneider</b><span data-i18n="ex.5">Campañas publicitarias como personaje secundario y figurante.</span></div>
+    </div>
+
+    <div class="spread rv">
+      <div class="pg">
+        <h2 data-i18n="fo.h">Formación —<span>interpretación teatral integral.</span></h2>
+        <ul class="form-list" style="margin-top:36px">
+          <li><span>01</span><div><b data-i18n="fo.1h">Poesía</b> — <span data-i18n="fo.1">análisis y recitación como herramienta expresiva.</span></div></li>
+          <li><span>02</span><div><b data-i18n="fo.2h">Improvisación</b> — <span data-i18n="fo.2">creación espontánea de escenas y personajes.</span></div></li>
+          <li><span>03</span><div><b data-i18n="fo.3h">Interpretación</b> — <span data-i18n="fo.3">construcción dramática en géneros diversos: drama, comedia, sainete, Lorca.</span></div></li>
+          <li><span>04</span><div><b data-i18n="fo.4h">Expresión corporal</b> — <span data-i18n="fo.4">dominio del movimiento escénico y lenguaje físico.</span></div></li>
+          <li><span>05</span><div><b data-i18n="fo.5h">Voz</b> — <span data-i18n="fo.5">técnicas de voz, proyección y matices interpretativos.</span></div></li>
+        </ul>
+        <div class="pg-foot"><span data-i18n="fo.f">Formación</span><span>04</span></div>
+      </div>
+      <div class="pg" style="background:#f1eeea">
+        <h2 data-i18n="sk.h">Habilidades —<span>adicionales.</span></h2>
+        <p class="quote draw" data-i18n="sk.q">“un nuevo despertar artístico”</p>
+        <div class="skills" style="margin-top:0">
+          <span data-i18n="sk.1">Danza contemporánea</span><span data-i18n="sk.2">Improvisación teatral</span><span data-i18n="sk.3">Manejo de títeres</span><span data-i18n="sk.4">Natación</span><span data-i18n="sk.5">Modelaje</span>
+        </div>
+        <div class="pg-foot"><span data-i18n="sk.f">Disponibilidad: todo el mundo</span><span>05</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="ct" id="contacto" data-sec="contacto">
+  <div class="wrap">
+    <p class="caps" style="text-align:center;margin:0 0 10px" data-i18n="ct.k">Colaboraciones · Castings · Campañas</p>
+    <h2 class="ct-big glass draw" data-i18n="ct.h">Hablemos</h2>
+    <div class="ct-links">
+      <a href="mailto:sofi.larra33@gmail.com"><span class="caps">Email</span><b>sofi.larra33@gmail.com</b></a>
+      <a href="https://www.instagram.com/sofi.larra/" target="_blank" rel="noopener"><span class="caps">Instagram</span><b>@sofi.larra</b></a>
+      <a href="tel:+34650059010"><span class="caps" data-i18n="ct.t">Teléfono</span><b>+34 650 059 010</b></a>
+    </div>
+    <div class="ct-foot caps">
+      <span>© 2026 Sofia Larraggione <span class="ver">v3.11</span></span>
+      <span data-i18n="ct.m">Base en Madrid · Movilidad a todo el mundo</span>
+      <a href="#elegir" data-i18n="ct.back">Elegir otra sección ↑</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="assets/main.js?v=2.0" defer></script>
+</body>
+</html>
