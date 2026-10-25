@@ -1,4 +1,4 @@
-/* Sofia Larraggione — Portfolio editorial · v3.12 */
+/* Sofia Larraggione — Portfolio editorial · v3.13 */
 (() => {
   const d = document, b = d.body, $ = (s, c = d) => c.querySelector(s), $$ = (s, c = d) => [...c.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -150,6 +150,7 @@
   observeAll();
 
   /* ---------- Cuaderno de espiral: pasa arriba y enseguida abajo, misma foto ---------- */
+  const touchOnly = matchMedia('(hover: none)').matches;
   $$('.book').forEach((bk, bi) => {
     const imgs = bk.dataset.imgs.split(',');
     let i = 0, busy = false;
@@ -183,7 +184,7 @@
     /* en el celular (sin cursor): se toca para pasar, y además pasa solo cuando está a la vista */
     bk.addEventListener('click', flip);
     bk.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
-    const vis = new IntersectionObserver(es => es.forEach(en => { clearInterval(auto); if (en.isIntersecting && !hov) auto = setInterval(flip, 3200 + bi * 230); }));
+    const vis = new IntersectionObserver(es => es.forEach(en => { clearInterval(auto); if (en.isIntersecting && !hov) { if (touchOnly) flip(); auto = setInterval(flip, (touchOnly ? 1600 : 3200) + bi * (touchOnly ? 90 : 230)); } }), { threshold: .35 });
     vis.observe(bk);
   });
 
