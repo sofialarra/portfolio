@@ -1,4 +1,4 @@
-/* Sofia Larraggione — Portfolio editorial · v3.13 */
+/* Sofia Larraggione — Portfolio editorial · v3.14 */
 (() => {
   const d = document, b = d.body, $ = (s, c = d) => c.querySelector(s), $$ = (s, c = d) => [...c.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
